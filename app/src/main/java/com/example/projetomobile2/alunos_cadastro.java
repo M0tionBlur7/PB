@@ -5,30 +5,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class alunos_cadastro extends AppCompatActivity {
 
-    private ImageView imageAlunos;
+    private ImageView voltarMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_alunos_cadastro);
 
-        imageAlunos = findViewById(R.id.alunos);
-        imageAlunos.setOnClickListener(new View.OnClickListener() {
+        voltarMenu = findViewById(R.id.voltarPrincipal);
+        voltarMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent alunoPrincipal = new Intent(getApplicationContext(), alunos_principal.class);
+                Intent voltarPrincipal = new Intent(getApplicationContext(), alunos_principal.class);
                 finish();
-                startActivity(alunoPrincipal);
+                startActivity(voltarPrincipal);
             }
         });
-
-
-
 
     }
 }

@@ -15,6 +15,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_alunos_principal" />
 
+    <ImageView
+        android:id="@+id/voltarMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.166"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="373dp"
@@ -25,12 +37,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/addAlunos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:clickable="true"
-        app:backgroundTint="#FF9800"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
