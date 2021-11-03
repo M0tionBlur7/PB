@@ -33,7 +33,7 @@ public class alunos_principal extends AppCompatActivity {
         addAluno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaAddAlunos = new Intent(getApplicationContext(), alunos_cadastro.class);
+                Intent telaAddAlunos = new Intent(getApplicationContext(), alunos_cad.class);
                 finish();
                 startActivity(telaAddAlunos);
             }

@@ -7,22 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class alunos_cadastro extends AppCompatActivity {
+public class info extends AppCompatActivity {
 
-    private ImageView voltarMenu;
+    private ImageView volta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alunos_cadastro);
+        setContentView(R.layout.activity_info);
 
-        voltarMenu = findViewById(R.id.voltarPrincipal);
-        voltarMenu.setOnClickListener(new View.OnClickListener() {
+        volta.findViewById(R.id.voltar);
+        volta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent voltarPrincipal = new Intent(getApplicationContext(), alunos_principal.class);
+                Intent voltarTela = new Intent(getApplicationContext(), MainActivity.class);
                 finish();
-                startActivity(voltarPrincipal);
+                startActivity(voltarTela);
             }
         });
 
